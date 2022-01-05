@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Punjab University</title>
+
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            body {
+                background-color: rgba(6, 142, 221, 0.801);
+            }
+
+            .navBar {
+                width: 100%;
+                height: 80px;
+                background-color: aliceblue;
+
+            }
+
+            ul {
+                list-style: none;
+
+            }
+
+            li {
+                float: left;
+
+            }
+
+            .BodyImg {
+                width: 100px;
+                height: 80px;
+                padding: 30px 20px 0px 130px;
+                border-radius: 10%;
+
+            }
+
+            h5 {
+                padding: 5px 0px 0px 145px;
+                color: white;
+                font-size: 12px;
+
+            }
+
+            .Sidebar {
+                width: 45px;
+                height: 100%;
+                position: absolute;
+                z-index: 2;
+                background-color: #28313b;
+                margin-top: 0px;
+                cursor: pointer;
+
+            }
+
+            #SideBarCross {
+                display: none;
+                float: right;
+                font-size: 40px;
+                padding: 0px 5px 0px 0px;
+                color: white;
+                font-size: 45px;
+                cursor: pointer;
+            }
+
+            #SideBarCross:hover {
+                color: yellow;
+                font-size: 50px;
+            }
+
+            #SideBarDisplay {
+                display: none;
+            }
+
+            #Check1 {
+                display: block;
+            }
+
+            .sideBarLI {
+                padding: 5px;
+                padding-top: 5px;
+                width: 100%;
+                height: 25px;
+                font-size: larger;
+                color: white;
+                text-decoration: none;
+
+
+            }
+
+            .SideBarATag {
+                text-decoration: none;
+                color: rgb(195, 207, 212);
+            }
+
+
+
+            .SideBarDiv:hover {
+                background-color: rgb(50, 59, 75);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+
+            <div class="Sidebar" id="SideBar1">
+                <div>
+                    <ul>
+
+                        <li style="display:block; color: white; font-size: 25px; margin: 4px; padding: 4px; border: 1px solid white; box-shadow: 2px 2px rgba(255, 255, 255, 0.438); width: 27px;"
+                            onclick="SideBarFunction()">
+                            ☰
+                        </li>
+
+                        <li id="SideBarCross" onclick="SideBarCloseFunction()">&times;</li>
+                    </ul>
+                </div>
+                <div id="Check1" style="overflow: hidden;">
+                    <ul id="SideBarDisplay">
+
+                        <li style="overflow: hidden; display:inline-block; float: none; margin-top: 60px;"
+                            class="sideBarLI">
+                            <div class="SideBarDiv"><a href="PunjabUniversity.html" class="SideBarATag"> Admit Card
+
+                                </a></div>
+                        </li>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none; " class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Alumni Connect
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Assignment
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Attendnce
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none; " class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag">Circular
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none; " class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> College Info
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Convocation Form
+
+                                </a></li>
+                        </div>
+
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none; " class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Courses
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Seating Plan
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Feedback
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Grivance Form
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none; " class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> LMS
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="ReportCard.html" class="SideBarATag"> My Report Card
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Neft Form
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none; " class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Proctor
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Student services
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Survey
+
+                                </a></li>
+                        </div>
+                        <div class="SideBarDiv">
+                            <li style="overflow: hidden; display:inline-block; float: none;" class="sideBarLI"><a
+                                    href="PunjabUniversity.html" class="SideBarATag"> Time Tabel
+
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" navBar">
+            <img src="PunjabUniversityLogo1.jpg" style="width: 400px; height: 75px; margin-left: 30%; ">
+
+        </div>
+        <div>
+            <ul>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Admitcard1.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5 box-shadow: 5px 10px 8px #888888;>Admit Card</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Alumni.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5>Alumni Connect</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Assigment1.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5>Assignment</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="attendnce1.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5>Attendnce</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Circular.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5>Circular</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="CollegeInfo1.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5>College Info</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Convocation Form1.jpg"
+                            alt="Convocation Form" class="BodyImg">
+                        <h5>Convocation Form</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Courses1.jpg"
+                            alt="AdmitCard" class="BodyImg">
+                        <h5>Courses</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img
+                            src="Examination Seating Plan1.jpg" alt="Examination Seating Plan" class="BodyImg">
+                        <h5>Seating Plan</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Feedback1.jpg"
+                            alt="Feedback" class="BodyImg">
+                        <h5>Feedback</h5>
+                    </a>
+                </li>
+
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img
+                            src="Grivance Complaint111.svg" alt="Grivance Complaint" class="BodyImg">
+                        <h5>Grivance Complaint</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Lms1.jpg" alt="Lms logo"
+                            class="BodyImg">
+                        <h5>LMS</h5>
+                    </a>
+                </li>
+                <li> <a href="ReportCard.html" style=" text-decoration: none;"><img src="My Report Card1.jpg"
+                            alt="My Report Card" class="BodyImg">
+                        <h5>My Report Card</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Neft form.jpg"
+                            alt="Neft form" class="BodyImg">
+                        <h5>Neft form</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Proctor.jpg"
+                            alt="Proctor logo" class="BodyImg">
+                        <h5>Proctor</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Student services.jpg"
+                            alt="Student services" class="BodyImg">
+                        <h5>Student services</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Survey.svg"
+                            alt="Survey logo" class="BodyImg">
+                        <h5>Survey</h5>
+                    </a>
+                </li>
+                <li> <a href="punjabUniversity.html" style=" text-decoration: none;"><img src="Time table.jpg"
+                            alt="Time table logo" class="BodyImg">
+                        <h5>Time table</h5>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <script src="PunjabUniversity.js"></script>
+    </body>
+
+</html>
